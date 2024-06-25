@@ -1,0 +1,18 @@
+:root {
+  --light-background-color-1: #ffffff;
+  --light-background-color-2: #eef2f5;
+  --light-text-color: #000000;
+  --dark-background-color-1: #000000;
+  --dark-background-color-2: #212529;
+  --dark-background-color-3: #6c757d;
+}
+
+.bg-light{
+  background-color: #eef2f5 !important;
+}
+.bg-black{
+  background-color: #000000 !important;
+}
+.text-light{
+  color: #eef2f5 !important;;
+}
