@@ -8,7 +8,7 @@ export default function About(props) {
   const[btnText, setBtnText] = useState("Dark Mode");
 
   const toggleStyle =  () => {
-    if (myStyle.color == 'white'){
+    if (myStyle.color === 'white'){
       setMyStyle(
         {
           color: 'black',
@@ -30,9 +30,9 @@ export default function About(props) {
 
   return (
     <>
-      <div className={`row text-${props.mode == 'dark'? 'light' : 'dark' } `}>
+      <div className={`row text-${props.mode === 'dark'? 'light' : 'dark' } `}>
         <div className='col-md-12 col-lg-6 rounded py-2'>
-          <div className={`p-3 bg-${props.mode == 'dark' ? 'black' : 'white'} rounded-3`}>
+          <div className={`p-3 bg-${props.mode === 'dark' ? 'black' : 'white'} rounded-3`}>
             <h3>Pellentesque eget sem quis elit blandit maximus</h3>
             <p>In facilisis, odio quis consequat venenatis, nisl lectus interdum lorem, eu lacinia purus sem in magna. Cras ex risus, porttitor sit amet purus malesuada, imperdiet condimentum eros. Proin dapibus vitae nulla non gravida. Mauris eget elementum lorem, at mollis ex. Vivamus viverra, sapien vitae maximus posuere, lorem neque bibendum massa, sed suscipit sapien mi a dui. Quisque consequat, lorem eu convallis dignissim, est erat fringilla lacus, id tristique arcu metus a elit. Sed mauris nunc, porttitor sit amet elit nec, condimentum elementum tortor. Fusce sapien nisl, porta vel molestie ultrices, feugiat eget risus. Aliquam mattis orci sed ex vulputate, non fringilla magna luctus. Donec imperdiet ultrices leo, at eleifend ipsum vulputate sed. Vivamus ac luctus nulla, at condimentum odio. Cras faucibus dui nunc, eu lacinia sem varius a. Donec posuere maximus accumsan. Curabitur vel odio et purus suscipit mollis sit amet ac elit.</p>
           </div>
@@ -73,7 +73,7 @@ export default function About(props) {
         </div> 
       </div>
       
-      <button className={`btn ${btnText == "Dark Mode" ? "btn-light" : "btn-outline-dark"}`} onClick={toggleStyle} >{btnText}</button>
+      <button className={`btn ${btnText === "Dark Mode" ? "btn-light" : "btn-outline-dark"}`} onClick={toggleStyle} >{btnText}</button>
     </>
   )
 }
